@@ -6,7 +6,7 @@ import TheFavProducts from "@/components/favs/TheFavProducts.vue";
 <template>
   <section class="favs">
     <div class="container favs__container">
-      <AppPagination :secondPageTitle="'Избранное'" />
+      <AppPagination secondPageTitle="Избранное" />
       <TheFavProducts />
     </div>
   </section>
