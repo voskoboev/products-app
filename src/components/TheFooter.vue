@@ -28,7 +28,7 @@ import { RouterLink } from "vue-router";
 
 .footer {
   color: vars.$color-bright;
-  background-color: #0a1e32;
+  background-color: vars.$color-primary;
 }
 
 .footer__container {

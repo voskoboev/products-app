@@ -2,7 +2,6 @@
 import { useStore } from "@/utils/store";
 import { useRoute } from "@/utils/route";
 import { ADD_PRODUCT_TO_FAVS } from "@/constants/mutations";
-import AppPagination from "@/components/AppPagination.vue";
 
 const store = useStore();
 const route = useRoute();
@@ -56,7 +55,6 @@ const route = useRoute();
 
   @include mixins.mobile-screen {
     padding-bottom: 50px;
-
   }
 }
 

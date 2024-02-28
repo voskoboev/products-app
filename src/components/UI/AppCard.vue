@@ -54,6 +54,7 @@ const productPath = computed(() => {
     }
   }
 }
+
 .card__link {
   display: flex;
   flex-direction: column;

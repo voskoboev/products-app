@@ -6,13 +6,15 @@ import App from "@/App.vue";
 import router from "@/router";
 import store from "@/store";
 
-import AppCard from "@/components/AppCard.vue";
+import AppCard from "@/components/UI/AppCard.vue";
 import AppButton from "@/components/UI/AppButton.vue";
+import AppPagination from "@/components/UI/AppPagination.vue";
 
 Vue.config.productionTip = false;
 
-Vue.component("AppCard", AppCard);
 Vue.component("AppButton", AppButton);
+Vue.component("AppCard", AppCard);
+Vue.component("AppPagination", AppPagination);
 
 new Vue({
   router,

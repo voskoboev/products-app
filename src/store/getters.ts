@@ -1,9 +1,9 @@
-import { IState } from "@/types/store/IState";
 import { GetterTree } from "vuex";
+import { IState } from "@/types/store/IState";
 import { IGetters } from "@/types/store/IGetters";
 
 export const getters: GetterTree<IState, unknown> & IGetters = {
-  favsAmount: (state: IState) => {
+  favsAmount: (state) => {
     return state.favProducts.length;
   },
 

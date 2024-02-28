@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { useStore } from "@/utils/store";
 import { RouterLink } from "vue-router";
+import IconHeartFilled from "@/components/icons/IconHeartFilled.vue";
 
 const store = useStore();
 </script>
@@ -26,11 +27,7 @@ const store = useStore();
         :data-favs-amount="store.getters.favsAmount"
         aria-label="Ссылка на страницу избранного"
       >
-        <img
-          class="header__fav-img"
-          src="@/assets/img/heart-filled.svg"
-          alt="Сердце"
-        />
+        <IconHeartFilled />
       </RouterLink>
     </div>
   </header>
@@ -80,6 +77,7 @@ const store = useStore();
     font-weight: 700;
     color: vars.$color-bright;
     background-color: #eb4c47;
+    line-height: 10px;
   }
 }
 </style>

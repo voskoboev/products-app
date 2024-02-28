@@ -1,9 +1,8 @@
+import { ActionTree } from "vuex";
 import axios from "axios";
 import { IState } from "@/types/store/IState";
-import { ActionTree, Commit } from "vuex";
 import { IActions } from "@/types/store/IActions";
 import { PRODUCTS_API, PRODUCTS_LIMIT_TO_SHOW } from "@/constants/products";
-
 import {
   GET_PRODUCTS,
   TOGGLE_PRODUCTS_LOADING,
@@ -11,7 +10,7 @@ import {
 } from "@/constants/mutations";
 
 export const actions: ActionTree<IState, unknown> & IActions = {
-  getProducts: async ({ commit }: { commit: Commit }) => {
+  getProducts: async ({ commit }) => {
     try {
       const res = await axios.get(
         `${PRODUCTS_API}?limit=${PRODUCTS_LIMIT_TO_SHOW}`

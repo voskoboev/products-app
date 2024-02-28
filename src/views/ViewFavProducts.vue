@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import AppPagination from "@/components/AppPagination.vue";
 import TheFavProducts from "@/components/favs/TheFavProducts.vue";
 </script>
 

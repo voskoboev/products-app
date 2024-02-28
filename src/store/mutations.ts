@@ -1,5 +1,5 @@
-import { IState } from "@/types/store/IState";
 import { MutationTree } from "vuex";
+import { IState } from "@/types/store/IState";
 import { IMutations } from "@/types/store/IMutations";
 import {
   GET_PRODUCTS,
