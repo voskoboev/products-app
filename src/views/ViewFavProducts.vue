@@ -11,7 +11,7 @@ import TheFavProducts from "@/components/favs/TheFavProducts.vue";
   </section>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .favs__container {
   padding-bottom: 112px;
 }

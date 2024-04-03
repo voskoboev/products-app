@@ -17,7 +17,7 @@ const store = useStore();
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "@/assets/styles/vars.scss";
 
 .favs__title {

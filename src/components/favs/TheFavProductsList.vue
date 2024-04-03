@@ -15,7 +15,7 @@ const store = useStore();
   </ul>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .favs-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));

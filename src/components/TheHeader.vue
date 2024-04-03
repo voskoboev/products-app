@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { useStore } from "@/utils/store";
 import { RouterLink } from "vue-router";
+import { useStore } from "@/utils/store";
 import IconHeartFilled from "@/components/icons/IconHeartFilled.vue";
 
 const store = useStore();
@@ -33,7 +33,7 @@ const store = useStore();
   </header>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "@/assets/styles/vars.scss";
 
 .header {

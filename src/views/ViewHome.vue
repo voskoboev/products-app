@@ -11,7 +11,7 @@ import TheProducts from "@/components/products/TheProducts.vue";
   </section>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "@/assets/styles/mixins.scss";
 
 .home__promo {

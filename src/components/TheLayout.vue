@@ -12,7 +12,7 @@ import TheFooter from "@/components/TheFooter.vue";
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .layout {
   display: flex;
   flex-direction: column;

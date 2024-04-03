@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { useStore } from "@/utils/store";
 import { defineProps } from "vue";
+import { useStore } from "@/utils/store";
 import { IProduct } from "@/types/IProduct";
 import { ADD_PRODUCT_TO_FAVS } from "@/constants/mutations";
 import IconHeadtEmpty from "@/components/icons/IconHeartEmpty.vue";
@@ -24,7 +24,7 @@ const store = useStore();
   </AppCard>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "@/assets/styles/vars.scss";
 
 .products-item__fav-button {

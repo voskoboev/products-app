@@ -8,7 +8,7 @@ import { RouterView } from "vue-router";
   </main>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .main {
   flex-grow: 1;
 }

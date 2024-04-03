@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { useStore } from "@/utils/store";
 import { defineProps } from "vue";
+import { useStore } from "@/utils/store";
 import { IProduct } from "@/types/IProduct";
 import { REMOVE_PRODUCT_FROM_FAVS } from "@/constants/mutations";
 
@@ -49,7 +49,7 @@ const store = useStore();
   </li>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .favs-item__close-button {
   width: 20px;
   height: 20px;

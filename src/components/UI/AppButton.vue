@@ -1,18 +1,18 @@
 <script lang="ts" setup>
 import { defineEmits } from "vue";
-import IconHeadtEmpty from "@/components/icons/IconHeartEmpty.vue";
+import IconHeartEmpty from "@/components/icons/IconHeartEmpty.vue";
 
 const emit = defineEmits(["click"]);
 </script>
 
 <template>
   <button class="button" @click="emit('click')">
-    <IconHeadtEmpty class="button__img" />
+    <IconHeartEmpty class="button__img" />
     <slot>Сохранить</slot>
   </button>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "@/assets/styles/vars.scss";
 
 .button {

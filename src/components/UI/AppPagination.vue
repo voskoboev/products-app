@@ -25,7 +25,7 @@ defineProps<{
   </nav>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @use "@/assets/styles/vars.scss";
 
 .pagination {
