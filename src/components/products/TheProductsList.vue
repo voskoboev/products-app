@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useStore } from "@/utils/store";
+import { useStore } from "@/hooks/useStore";
 import TheProductsListItem from "@/components/products/TheProductsListItem.vue";
 
 const store = useStore();
@@ -23,3 +23,4 @@ const store = useStore();
   width: 100%;
 }
 </style>
+@/hooks/store

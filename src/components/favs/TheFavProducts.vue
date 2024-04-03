@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useStore } from "@/utils/store";
+import { useStore } from "@/hooks/useStore";
 import TheFavProductsList from "@/components/favs/TheFavProductsList.vue";
 
 const store = useStore();
@@ -43,3 +43,4 @@ const store = useStore();
   text-align: center;
 }
 </style>
+@/hooks/store

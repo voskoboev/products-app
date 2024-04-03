@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { RouterLink } from "vue-router";
-import { useStore } from "@/utils/store";
+import { useStore } from "@/hooks/useStore";
 import IconHeartFilled from "@/components/icons/IconHeartFilled.vue";
 
 const store = useStore();
@@ -81,3 +81,4 @@ const store = useStore();
   }
 }
 </style>
+@/hooks/store

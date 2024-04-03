@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { useStore } from "@/utils/store";
-import { useRoute } from "@/utils/route";
+import { useStore } from "@/hooks/useStore";
+import { useRoute } from "@/hooks/useRoute"
 import { ADD_PRODUCT_TO_FAVS } from "@/constants/mutations";
 
 const store = useStore();
@@ -133,3 +133,4 @@ const route = useRoute();
   line-height: 40px;
 }
 </style>
+@/hooks/store@/hooks/route

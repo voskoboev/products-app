@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { defineProps } from "vue";
-import { useStore } from "@/utils/store";
+import { useStore } from "@/hooks/useStore";
 import { IProduct } from "@/types/IProduct";
 import { ADD_PRODUCT_TO_FAVS } from "@/constants/mutations";
 import IconHeadtEmpty from "@/components/icons/IconHeartEmpty.vue";
@@ -38,3 +38,4 @@ const store = useStore();
   }
 }
 </style>
+@/hooks/store
