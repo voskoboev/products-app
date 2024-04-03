@@ -9,9 +9,9 @@ import {
 } from "@/constants/mutations";
 
 export interface IMutations {
-  [GET_PRODUCTS](state: IState, products: IProduct[]): void;
-  [TOGGLE_PRODUCTS_LOADING](state: IState, loadingStatus: boolean): void;
-  [TOGGLE_PRODUCTS_ERROR](state: IState, errorStatus: boolean): void;
-  [ADD_PRODUCT_TO_FAVS](state: IState, productId: number): void;
-  [REMOVE_PRODUCT_FROM_FAVS](state: IState, productId: number): void;
+  [GET_PRODUCTS]: (state: IState, products: IProduct[]) => void;
+  [TOGGLE_PRODUCTS_LOADING]: (state: IState, loadingStatus: boolean) => void;
+  [TOGGLE_PRODUCTS_ERROR]: (state: IState, errorStatus: boolean) => void;
+  [ADD_PRODUCT_TO_FAVS]: (state: IState, productId: number) => void;
+  [REMOVE_PRODUCT_FROM_FAVS]: (state: IState, productId: number) => void;
 }
