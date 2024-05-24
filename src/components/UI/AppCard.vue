@@ -26,9 +26,9 @@ const productPath = computed(() => {
       <slot />
     </div>
     <RouterLink
-      :to="productPath"
       class="card__link"
       aria-labelledby="productItemTitle"
+      :to="productPath"
     >
       <img class="card__img" :src="product.image" :alt="product.title" />
       <h3 id="productItemTitle" class="card__title">{{ product.title }}</h3>

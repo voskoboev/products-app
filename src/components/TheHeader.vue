@@ -24,8 +24,8 @@ const store = useStore();
       <RouterLink
         class="header__favs-link"
         to="/favs"
-        :data-favs-amount="store.getters.favsAmount"
         aria-label="Ссылка на страницу избранного"
+        :data-favs-amount="store.getters.favsAmount"
       >
         <IconHeartFilled />
       </RouterLink>

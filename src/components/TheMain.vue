@@ -11,5 +11,10 @@ import { RouterView } from "vue-router";
 <style lang="scss">
 .main {
   flex-grow: 1;
+  // height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

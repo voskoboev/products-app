@@ -8,17 +8,17 @@ defineProps<{
 </script>
 
 <template>
-  <nav class="pagination">
-    <ol class="pagination__list">
-      <li class="pagination__list-item">
+  <nav class="breadcrumbs">
+    <ol class="breadcrumbs__list">
+      <li class="breadcrumbs__list-item">
         <RouterLink
-          class="pagination__list-link pagination__list-link--home"
+          class="breadcrumbs__list-link breadcrumbs__list-link--home"
           to="/"
         >
           Главная
         </RouterLink>
       </li>
-      <li class="pagination__list-item">
+      <li class="breadcrumbs__list-item">
         {{ secondPageTitle }}
       </li>
     </ol>
@@ -28,24 +28,24 @@ defineProps<{
 <style lang="scss">
 @use "@/assets/styles/vars.scss";
 
-.pagination {
+.breadcrumbs {
   padding-top: 32px;
   padding-bottom: 16px;
 }
 
-.pagination__list {
+.breadcrumbs__list {
   display: flex;
   gap: 30px;
 }
 
-.pagination__list-item {
+.breadcrumbs__list-item {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   color: vars.$color-secondary;
 }
 
-.pagination__list-link--home {
+.breadcrumbs__list-link--home {
   position: relative;
 
   @media (any-hover: hover) {
@@ -56,7 +56,7 @@ defineProps<{
   }
 
   &::after {
-    content: "›";
+    content: "\203A";
     position: absolute;
     right: -16px;
   }

@@ -18,6 +18,10 @@ const routes: Array<RouteConfig> = [
     name: "product-details",
     component: () => import("../views/ViewProductDetails.vue"),
   },
+  {
+    path: "*",
+    component: () => import("../views/ViewNotFound.vue"),
+  },
 ];
 
 const router = new VueRouter({

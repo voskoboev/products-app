@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 import { defineProps } from "vue";
-import { useStore } from "@/hooks/useStore";
-import { IProduct } from "@/types/IProduct";
 import { REMOVE_PRODUCT_FROM_FAVS } from "@/constants/mutations";
+import { useStore } from "@/hooks/useStore";
+import IconClose from "@/components/icons/IconClose.vue";
+import { IProduct } from "@/types/IProduct";
 
 defineProps<{
   favProduct: IProduct;
@@ -16,34 +17,10 @@ const store = useStore();
     <AppCard :product="favProduct">
       <button
         class="favs-item__close-button"
-        @click="store.commit(REMOVE_PRODUCT_FROM_FAVS, favProduct.id)"
         aria-label="Кнопка удаления товара из избранного"
+        @click="store.commit(REMOVE_PRODUCT_FROM_FAVS, favProduct.id)"
       >
-        <svg
-          width="19"
-          height="19"
-          viewBox="0 0 19 19"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="1.41406"
-            width="24"
-            height="2"
-            rx="1"
-            transform="rotate(45 1.41406 0)"
-            fill="#0A1E32"
-          />
-          <rect
-            x="18.7988"
-            y="1.41431"
-            width="24"
-            height="2"
-            rx="1"
-            transform="rotate(135 18.7988 1.41431)"
-            fill="#0A1E32"
-          />
-        </svg>
+        <IconClose />
       </button>
     </AppCard>
   </li>
@@ -55,4 +32,3 @@ const store = useStore();
   height: 20px;
 }
 </style>
-@/hooks/store

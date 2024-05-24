@@ -23,4 +23,3 @@ const store = useStore();
   width: 100%;
 }
 </style>
-@/hooks/store

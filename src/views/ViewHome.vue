@@ -14,7 +14,14 @@ import TheProducts from "@/components/products/TheProducts.vue";
 <style lang="scss">
 @use "@/assets/styles/mixins.scss";
 
+.home {
+  width: 100%;
+  height: 100%;
+}
+
 .home__promo {
+  width: 100%;
+
   height: 500px;
   background-image: url("@/assets/img/fanny-pack.jpg");
   background-size: cover;

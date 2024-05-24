@@ -8,13 +8,13 @@ import store from "@/store";
 
 import AppCard from "@/components/UI/AppCard.vue";
 import AppButton from "@/components/UI/AppButton.vue";
-import AppPagination from "@/components/UI/AppPagination.vue";
+import AppBreadcrumbs from "@/components/UI/AppBreadcrumbs.vue";
 
 Vue.config.productionTip = false;
 
 Vue.component("AppButton", AppButton);
 Vue.component("AppCard", AppCard);
-Vue.component("AppPagination", AppPagination);
+Vue.component("AppBreadcrumbs", AppBreadcrumbs);
 
 new Vue({
   router,

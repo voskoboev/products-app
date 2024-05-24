@@ -43,4 +43,3 @@ const store = useStore();
   text-align: center;
 }
 </style>
-@/hooks/store

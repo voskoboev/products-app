@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { useStore } from "@/hooks/useStore";
-import { useRoute } from "@/hooks/useRoute"
 import { ADD_PRODUCT_TO_FAVS } from "@/constants/mutations";
+import { useStore } from "@/hooks/useStore";
+import { useRoute } from "@/hooks/useRoute";
 
 const store = useStore();
 const route = useRoute();
@@ -11,7 +11,7 @@ const route = useRoute();
   <section class="product-details">
     <div class="container">
       <div class="product-details__upper">
-        <AppPagination :secondPageTitle="route.params.title" />
+        <AppBreadcrumbs :second-page-title="route.params.title" />
       </div>
       <div class="product-details__lower">
         <div class="product-details__left">
@@ -133,4 +133,3 @@ const route = useRoute();
   line-height: 40px;
 }
 </style>
-@/hooks/store@/hooks/route

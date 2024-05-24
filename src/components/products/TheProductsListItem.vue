@@ -1,9 +1,9 @@
 <script lang="ts" setup>
 import { defineProps } from "vue";
-import { useStore } from "@/hooks/useStore";
-import { IProduct } from "@/types/IProduct";
 import { ADD_PRODUCT_TO_FAVS } from "@/constants/mutations";
+import { useStore } from "@/hooks/useStore";
 import IconHeadtEmpty from "@/components/icons/IconHeartEmpty.vue";
+import { IProduct } from "@/types/IProduct";
 
 defineProps<{
   product: IProduct;
@@ -16,8 +16,8 @@ const store = useStore();
   <AppCard class="products-item" :product="product">
     <button
       class="products-item__fav-button"
-      @click="store.commit(ADD_PRODUCT_TO_FAVS, product.id)"
       aria-label="Кнопка добавления товара в избранное"
+      @click="store.commit(ADD_PRODUCT_TO_FAVS, product.id)"
     >
       <IconHeadtEmpty class="products-item__fav-svg" />
     </button>
@@ -38,4 +38,3 @@ const store = useStore();
   }
 }
 </style>
-@/hooks/store
